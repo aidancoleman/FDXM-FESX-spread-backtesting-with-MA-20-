@@ -11,7 +11,7 @@
 #include <math.h>
 
 
-/* percentile helper calculate running 5th and 95th percentile values for 100 sample window (sliding window starting from end of array and decrementing backwards back to start of array) */
+/* percentile helper to calculate running 5th and 95th percentile values for 100 sample window (sliding window starting from end of array and decrementing backwards back to start of array) */
 
 static void reverse_copy(const double *src, double *dst, size_t n){
     for (size_t i = 0; i < n; ++i) dst[i] = src[n - 1 - i];
